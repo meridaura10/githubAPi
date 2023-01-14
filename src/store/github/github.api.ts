@@ -21,7 +21,7 @@ export const githubApi = createApi({
         }),
         getUser: build.query<IUserGithubApi,string>({
             query: (login:string) => ({
-                url: `users/${login}`
+                url: `users/${login}/`
             })
         })
     })
